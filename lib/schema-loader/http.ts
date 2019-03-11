@@ -30,7 +30,7 @@ async function r(options: request.OptionsWithUrl) {
                     'Unexpected response from "' + options.url + '": ' + body.slice(0, 10) + '...'
                 ));
 
-            return resolve(body.data.__schema);
+            return resolve(body.__schema);
         });
     });
 }
